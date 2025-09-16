@@ -11,6 +11,22 @@ This repository contains a comprehensive tutorial for deploying and managing AI 
 - At least 2GB RAM and 20GB free disk space
 - Internet connectivity for package downloads
 
+### Step 0: System Check and Preparation (Recommended)
+
+Before starting the installation, run the enhanced system check to ensure your system is ready and resolve any potential issues:
+
+```bash
+sudo ./check-system-enhanced.sh
+```
+
+This educational script will:
+- **Auto-detect and resolve** update manager lock issues (common problem)
+- **Explain** what each check does and why it's important
+- **Verify** system requirements (OS, disk space, memory, network)
+- **Detect** container environment vs bare metal
+- **Check** Kubernetes installation status
+- **Provide** learning recommendations and next steps
+
 ### Complete Installation from Scratch
 
 #### Step 1: Install Kubernetes 
