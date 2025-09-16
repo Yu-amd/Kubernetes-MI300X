@@ -1,0 +1,32 @@
+# vLLM Demo Application Requirements
+# =================================
+
+# Core dependencies
+requests>=2.31.0
+flask>=2.3.0
+
+# Optional dependencies for enhanced functionality
+# Uncomment if you want to use these features:
+
+# For better JSON handling and pretty printing
+# jq>=1.0.0
+
+# For enhanced HTTP client features
+# httpx>=0.24.0
+
+# For async support (if you want to add async features)
+# aiohttp>=3.8.0
+
+# For data visualization (if you want to add charts)
+# matplotlib>=3.7.0
+# plotly>=5.15.0
+
+# For advanced CLI features
+# click>=8.1.0
+# rich>=13.0.0
+
+# For configuration management
+# python-dotenv>=1.0.0
+
+# For logging
+# loguru>=0.7.0

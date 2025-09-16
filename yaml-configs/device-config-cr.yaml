@@ -1,0 +1,6 @@
+apiVersion: amd.com/v1alpha1
+kind: DeviceConfig
+metadata:
+  name: amd-gpu-device-config
+  namespace: kube-amd-gpu
+spec: {}

@@ -1,0 +1,27 @@
+# Persistent Volume for AI model storage
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: ai-models-pv
+spec:
+  capacity:
+    storage: 50Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-storage
+  hostPath:
+    path: /mnt/data/ai-models
+---
+# Persistent Volume Claim for AI models
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: ai-models-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 50Gi
+  storageClassName: local-storage
